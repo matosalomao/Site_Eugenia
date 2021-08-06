@@ -180,7 +180,7 @@ footer {
   max-width: 650px;
   color: #F4F3EE;
   padding: 15px;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 .logo {
@@ -203,7 +203,7 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 116px;
+  padding-top: 124px;
 }
 
 .button-container {
