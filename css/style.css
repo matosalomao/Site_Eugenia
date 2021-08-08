@@ -58,6 +58,23 @@ a:active {
   color: #C68866;
 }
 
+a.publicaciones-link {
+  color: #C68866;
+}
+
+a.publicaciones-link:visited {
+  color: #C68866;
+}
+
+a.publicaciones-link:hover,
+a:focus {
+  color: #3D5A6C;
+}
+
+a:active {
+  color: #C68866;
+}
+
 .primary-button {
   background-color: #C68866;
   color: #F4F3EE;
@@ -267,10 +284,13 @@ ul {
   margin-bottom: 15px;
 }
 
-.bio{
+.bio {
   margin: 40px 0 0 0;
 }
 
+.publicaciones {
+  margin: 40px 0;
+}
 /* Illustration */
 @keyframes color-change {
   from {fill: #000000;}
