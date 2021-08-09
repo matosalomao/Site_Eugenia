@@ -55,7 +55,7 @@ a:focus {
 }
 
 a:active {
-  color: #C68866;
+  color: #F4F3EE;
 }
 
 a.publicaciones-link {
@@ -71,8 +71,25 @@ a:focus {
   color: #3D5A6C;
 }
 
-a:active {
+a.publicaciones-link:active {
   color: #C68866;
+}
+
+a.icon {
+  color: #F4F3EE;
+}
+
+a.icon:visited {
+  color: #F4F3EE;
+}
+
+a.icon:hover,
+a.focus {
+  color: #F4F3EE;
+}
+
+a.icon:active {
+  color: #F4F3EE;
 }
 
 .primary-button {
@@ -141,7 +158,6 @@ a:active {
 header {
   background-color:#3D5A6C;
   color:#F4F3EE;
-  text-align: center;
   position: fixed;
   width: 100%;
   z-index:1;
@@ -159,8 +175,8 @@ footer {
 .container {
   max-width: 1000px;
   padding: 15px 10px 10px 10px;
-  margin: 0 auto;
   align-content: center;
+  margin: auto;
 }
 
 .row {
@@ -201,26 +217,48 @@ footer {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 240px;
   display: block;
-  margin: 0 auto;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-nav > ul > li > a {
-  padding: 0 8px;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+  margin-left: 200px;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 0.1px solid #F4F3EE;
+  text-align: right;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 main {
-  padding-top: 124px;
+  padding-top: 70px;
 }
 
 .button-container {
@@ -274,9 +312,7 @@ main {
   text-align: center;
 }
 
-ul {
-  padding: 0;
-}
+
 
 .list {
   border-bottom: 1px solid #3D5A6C;
@@ -313,12 +349,10 @@ ul {
 /* Medium devices (6440px and larger) */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: unset;
     horizontal-align: center;
   }
 
   .logo {
-    margin: unset;
     position: absolute;
     min-width: 250px;
   }
@@ -326,6 +360,27 @@ ul {
     width: auto;
     float: right;
   }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+
+  nav > ul > li > a {
+    padding: 0 8px;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
 
   main {
     padding-top: 65px;

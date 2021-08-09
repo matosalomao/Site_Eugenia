@@ -11,14 +11,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/4eebb51c6d.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="home-pages">
+<body id="home-page">
 
-  <header>
+  <header id="top">
     <div class="container">
+      <div class="navtoggle" id=myNavtoggle>
       <div class="logo">
-        <a href="index.html">
+        <a href="#home-page">
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 684 118" style="enable-background:new 0 0 684 118;" xml:space="preserve">
             <style type="text/css">
               .st0 {
@@ -211,8 +213,10 @@
           <li><a href="bio.html" class="nav-menu">Biografía</a></li>
           <li><a href="publicaciones.html" class="nav-menu">Publicaciones</a></li>
           <li><a href="#contacto" class="nav-menu">Contacto</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+      </div>
     </div>
   </header>
 
@@ -223,7 +227,7 @@
         <source srcset="img/header_@2x.jpg" media="(max-width:768px)">
         <img src="img/header_@3x.jpg" alt="header image">
       </picture>
-      <div class="hero-text">
+      <div class="hero-text" >
         <h1>Dra. Eugenia Maria Azevedo Salomao</h1>
         <h3>Arquitecta Investigadora</h3>
         <p>Soy investigadora en el campo de la historia de la arquitectura y el urbanismo y conservación del patrimonio cultural. Me interesa la formación de recursos humanos de calidad y producir conocimientos que impacten en la mejora de la
@@ -420,6 +424,7 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>
