@@ -72,7 +72,7 @@ a.publicaciones-link:hover {
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  transition-duration: 0.2s opacity;
+  transition-duration: 0.2s;
 }
 
 .primary-button:visited {
@@ -105,7 +105,7 @@ a.publicaciones-link:hover {
   border-radius: 7px;
   border: 2px solid #C68866;
   margin-bottom: 20px;
-  transition-duration: 0.2s opacity;
+  transition-duration: 0.2s;
 }
 
 .button-img:visited {
@@ -237,6 +237,14 @@ main {
   align-items: center;
 }
 
+.button-container-left {
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-container2 {
   height: 50px;
   position: relative;
@@ -266,6 +274,7 @@ main {
 }
 
 .book-img-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,30 +304,9 @@ main {
 .publicaciones {
   margin: 40px 0;
 }
-/* Illustration */
-@keyframes color-change {
-  from {fill: #000000;}
-  to {fill: #E5E5E3;}
-}
-
-#sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-#cloud {
-  animation: 20s cloud-move infinite alternate linear;
-}
 
 /* Medium devices (6440px and larger) */
 @media only screen and (min-width: 640px) {
-  header {
-    horizontal-align: center;
-  }
 
   .logo {
     position: absolute;
@@ -342,8 +330,6 @@ main {
   ul {
     padding: 0;
   }
-
-
 
 .navtoggle.responsive nav {
   padding: unset;
@@ -394,6 +380,12 @@ display: none;
     display: table;
   }
 
+  .row4::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
   h3 {
     margin: 0;
   }
@@ -404,12 +396,26 @@ display: none;
 
   .button-container {
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center
   }
+
+
+  .button-container-left {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
 
  .book-img {
    width: 50%;
  }
+
+ .book-img-container {
+   margin-left: 15px;
+   justify-content: flex-start;
+   align-items: center;
+ }
+
  .align-text {
    text-align: right;
    margin: 80px 0 0 0;
