@@ -9,8 +9,6 @@ function menuToggle () {
   }
 }
 
-var $ = document.getElementById
-
 $('a[href*="#"]').on('click', function (e) {
   e.preventDefault()
 
